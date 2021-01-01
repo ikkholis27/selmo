@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Selmo</string>
+    <string name="p">Daya P (kWH)</string>
+    <string name="p_x">Billing (Rp)</string>
+    <string name="pkumulative">Total Daya (kWH)</string>
+    <string name="pkum_x">Total Billing (Rp)</string>
+    <string name="v">Tegangan V(V)</string>
+    <string name="I">Arus I (A)</string>
+    <string name="pf">Power Factor PF</string>
+    <string name="I_dan_pf">Arus dan Power factor - I (A) dan PF</string>
+
+</resources>

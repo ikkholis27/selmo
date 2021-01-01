@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    tools:context=".ui.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageButton
+                android:id="@+id/imageView"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_login"
+                android:contentDescription="Profile"
+                android:foregroundGravity="right"
+                android:padding="3dp"
+
+                android:src="@drawable/ic_baseline_priority_high_24"
+                app:layout_constraintRight_toLeftOf="@+id/btn_logout"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="10dp" />
+            <ImageButton
+               android:text="Logout"
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_login"
+                android:contentDescription="Profile"
+                android:foregroundGravity="right"
+                android:padding="3dp"
+                android:src="@drawable/ic_baseline_settings_power_24"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="10dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/p" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineP"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/p_x" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/linePX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/pkumulative" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/linepkumulative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/pkum_x" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/linepkum_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/v" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/linev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/I_dan_pf" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineI_dan_pf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp" />
+
+        <TextView
+            android:id="@+id/token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+
+    </LinearLayout>
+
+</ScrollView>
